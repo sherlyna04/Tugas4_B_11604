@@ -79,8 +79,8 @@ if uploaded_file is not None:
 
 
         cluster_method = [
-            ("KMeans_model", models["KMeans_model"], "KMeans Clustering", px.colors.sequential.Cividis)
-            ("AGG_model", models["AGG_model"], "Agglomerative Clustering", px.colors.sequential.Mint)
+            ("KMeans_model", models["KMeans_model"], "KMeans Clustering", px.colors.sequential.Cividis),
+            ("AGG_model", models["AGG_model"], "Agglomerative Clustering", px.colors.sequential.Mint),
             ("DBSCAN_model", models["DBSCAN_model"], "DBSCAN Clustering", px.colors.sequential.Plasma)        
         ]
 
