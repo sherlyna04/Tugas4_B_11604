@@ -52,9 +52,9 @@ if uploaded_file is not None:
 
     model_directory = r'C:\Users\Sherlyna Alfelia\Documents\KULIAH\SMT 5\ML\Unsupervised\Tugas4_B_11604'
     model_path = {
-        "AGG_model" : os.path.join(model_directory, r'AGG_model.pkl'),
-        "KMeans_model" : os.path. join(model_directory, r'KMeans_model.pkl'),
-        "DBSCAN_model" : os.path. join(model_directory, r'DBSCAN_model.pkl'),
+        "AGG_model" : r'AGG_model.pkl',
+        "KMeans_model" : r'KMeans_model.pkl',
+        "DBSCAN_model" : r'DBSCAN_model.pkl',
     }
 
     models = {}
