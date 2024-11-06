@@ -70,7 +70,7 @@ if uploaded_file is not None:
     sum_VO = st.sidebar.number_input("Total Visits Online", 0, 16)
 
     if st.sidebar.button("Prediksi !"):
-        features = ['Avg_Credit_Limit', 'Total Credit Cards', 'Total Visits Online']
+        features = ['Avg_Credit_Limit', 'Total_Credit_Cards', 'Total_visits_online']
         new_point = pd.DataFrame({
             'Avg_Credit_Limit' : [avg_CL],
             'Total_Credit_Cards' : [sum_CC],
@@ -79,9 +79,9 @@ if uploaded_file is not None:
 
 
         cluster_method = [
-            ("KMeans_model", models["KMeans_model"], "KMeans Clustering", px.colors.sequentiall.Cividis)
-            ("AGG_model", models["AGG_model"], "Agglomerative Clustering", px.colors.sequentiall.Mint)
-            ("DBSCAN_model", models["DBSCAN_model"], "DBSCAN Clustering", px.colors.sequentiall.Plasma)        
+            ("KMeans_model", models["KMeans_model"], "KMeans Clustering", px.colors.sequential.Cividis),
+            ("AGG_model", models["AGG_model"], "Agglomerative Clustering", px.colors.sequential.Mint),
+            ("DBSCAN_model", models["DBSCAN_model"], "DBSCAN Clustering", px.colors.sequential.Plasma)        
         ]
 
         col1, col2, col3 = st.columns(3)
